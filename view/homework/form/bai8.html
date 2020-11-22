@@ -1,0 +1,99 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <style>
+         .form-bt{
+        margin: 40px auto;
+        width: 50%;
+      
+    }
+
+    .form-group{
+        display: flex;
+        margin: 10px 0;
+    }
+    .form-group .title{
+        min-width: 100px;
+    }
+    .form-group input{
+        width: 200px;
+    }
+    .form-group .select{
+        width: 200px;
+    }
+    .form-radio input, .form-checkbox input{
+        width: 30px ;
+    }
+    .form-button{
+        margin-left: 90px;
+    }
+  button{
+    width: 100px;
+    margin-left:10px;
+  }
+    </style>
+</head>
+<body>
+    <div class="form-bt">
+        <form action="?page=homework&bt=form&dohomework=8kq.php" method="post">
+            <fieldset>
+                <legend>Enter your Information</legend>
+                <div class="form-content">
+                    <div class="form-group">
+                        <div class="title"><label>Fullname</label></div>
+                        <div><input type="text" name="fullname"></div>
+                    </div>
+                    <div class="form-group">
+                        <div class="title"><label>Address</label></div>
+                        <div><input type="text" name="address"></div>
+                    </div>
+                    <div class="form-group">
+                        <div class="title"><label>Phone</label></div>
+                        <div><input type="text" name="phone"></div>
+                    </div>
+                    <div class="form-group">
+                        <div class="title"><label>Gender</label></div>
+                        <div class="form-radio"><label> <input type="radio" name="gender" value="Male" checked>Male</label></div>
+                        <div class="form-radio"><label> <input type="radio" name="gender"  value="Famale" >Famale</label></div>
+                    </div>
+                    <div class="form-group">
+                        <div class="title"><label>Country</label></div>
+                        <div>
+                        <select class="select" name="country" >
+                            <option value="Việt Nam">Việt Nam</option>
+                            <option value="Úc">Úc</option>
+                            <option value="Lào">Lào</option>
+                            <option value="US" selected>US</option>
+                        </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="title"><label>Study</label></div>
+                        <div class="form-checkbox"><label> <input type="checkbox" name="study[]" value="PHP & MySQL" checked>PHP & MySQL</label></div>
+                        <div class="form-checkbox"><label> <input type="checkbox" name="study[]" value="ASP.NET">ASP.NET</label></div>
+                        <div class="form-checkbox"><label> <input type="checkbox" name="study[]" value="CCNA">CCNA</label></div>
+                        <div class="form-checkbox"><label> <input type="checkbox" name="study[]" value="Secutity+">Secutity+</label></div>
+                    </div>
+                    <div class="form-group">
+                        <div class="title"><label>NOTE</label></div>
+                        <div>
+                        <textarea id="w3review" name="note" rows="4" cols="50">
+
+                         </textarea>
+                        </div>
+                    </div>
+                    <div class="form-group form-button">
+                    <Button name="submit_button" value="Submit">Submit</Button>
+                    <Button name="submit_button" value="Cancel">Cancel</Button>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+.homework-left{
+    background-color: #343a40;
+    padding: 10px;
+}
+
+.homework-left h4{
+  
+    color: rgb(18, 214, 240);
+}
+.homework-left ul li a{
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.homework-left ul li:hover{
+    background-color: #fff;
+
+}
+.homework-left ul li a:hover{
+    color: black;
+
+}
+
